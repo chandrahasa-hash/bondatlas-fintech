@@ -10,6 +10,7 @@ import CompetitiveAdvantage from "./components/CompetitiveAdvantage";
 import Financials from "./components/Financials";
 import FinalCTA from "./components/FinalCTA";
 import TeamContactUs from "./components/TeamContactUs";
+import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       <CompetitiveAdvantage />
       <Financials />
       <FinalCTA />
-      <TeamContactUs />git status
+      <TeamContactUs />
+      <BackToTop />
       <Footer />
     </div>
   );
