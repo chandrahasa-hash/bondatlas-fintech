@@ -25,7 +25,7 @@ function App() {
       <CompetitiveAdvantage />
       <Financials />
       <FinalCTA />
-      <TeamContactUs />
+      <TeamContactUs />git status
       <Footer />
     </div>
   );
