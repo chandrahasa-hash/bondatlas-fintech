@@ -61,7 +61,7 @@ function FinalCTA() {
 
               <button onClick={() => { setShowForm(true); setSubmitted(false); }} className="bg-gradient-to-r from-blue-600 to-cyan-400 px-4 md:px-6 py-3 md:py-4 rounded-lg text-base md:text-lg font-semibold hover:scale-105 transition duration-200">Join Waitlist</button>
 
-              <a href="https://drive.google.com/file/d/11kIY41JODi5t9RNfn9matNlHrMN5AHBN/view?usp=sharing" target="_blank" rel="noreferrer" className="border border-cyan-400/30 text-cyan-400 px-4 md:px-6 py-3 md:py-4 rounded-lg text-base md:text-lg hover:bg-cyan-400/10 transition duration-200">View Pitch Deck</a>
+              <a href="https://drive.google.com/file/d/1P2dlhCtqiD95TzSNsEiywRrvYWlmfZns/view?usp=sharing" target="_blank" rel="noreferrer" className="border border-cyan-400/30 text-cyan-400 px-4 md:px-6 py-3 md:py-4 rounded-lg text-base md:text-lg hover:bg-cyan-400/10 transition duration-200">View Pitch Deck</a>
 
             </div>
 
