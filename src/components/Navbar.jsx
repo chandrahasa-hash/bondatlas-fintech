@@ -7,29 +7,25 @@ function Navbar() {
   const navItems = [
   { label: "Home", link: "#home" },
   { label: "Problem", link: "#problem" },
-  { label: "Market Timing", link: "#market" },
   { label: "Platform", link: "#platform" },
+  { label: "Why Now", link: "#why-now" },
   { label: "How It Works", link: "#how-it-works" },
-  { label: "Opportunity", link: "#opportunity" },
   { label: "Business Model", link: "#business-model" },
   { label: "Advantage", link: "#advantage" },
   { label: "Financials", link: "#financials" },
   { label: "Vision", link: "#vision" },
-  { label: "Contact", link: "#contact" },
+  { label: "ContactUs", link: "#ContactUs" },
 ];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-[#081225]/80 border-b border-white/10">
 
-      <div className="max-w-7xl mx-auto px-4 md:px-10 py-5 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 py-0 flex items-center justify-between">
 
         {/* LOGO */}
-        <a
-          href="#home"
-          className="text-2xl md:text-3xl font-bold text-white tracking-tight hover:scale-105 transition duration-300"
-        >
-          Bond<span className="text-blue-500">Atlas</span>
-        </a>
+    <a href="#home" className="flex items-center justify-center hover:scale-105 transition duration-300 -my-2">
+      <img src="/logo.png" alt="BondAtlas" className="w-30 h-30 object-contain" />
+    </a>
 
         {/* DESKTOP NAV */}
         <div className="hidden lg:flex items-center gap-5 xl:gap-7">
@@ -82,12 +78,7 @@ function Navbar() {
 
           ))}
 
-          <a
-            href="#contact"
-            className="bg-gradient-to-r from-blue-600 to-cyan-400 px-5 py-4 rounded-2xl text-center font-semibold"
-          >
-            Request Demo
-          </a>
+          
 
         </div>
 

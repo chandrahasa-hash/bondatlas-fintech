@@ -1,63 +1,69 @@
 function Hero() {
   return (
-    <section id="home" className="text-white px-5 md:px-10 py-24 min-h-screen flex items-center pt-24">
-      
+    <section
+      id="home"
+      className="text-white px-4 md:px-10 py-10 md:py-14 min-h-screen flex items-center overflow-hidden"
+    >
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        
+
         {/* LEFT SIDE */}
         <div>
 
-          <p className="uppercase tracking-[4px] text-cyan-400 mb-6">
+          {/* BRAND */}
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-none tracking-tight">
+
+            <span className="text-white">
+              Bond
+            </span>
+
+            <span className="text-blue-500">
+              Atlas
+            </span>
+
+          </h1>
+
+          {/* TAGLINE */}
+          <p className="uppercase tracking-[4px] text-cyan-400 mt-4 mb-4 text-sm">
             Global Bonds. Local Access.
           </p>
 
-          <h1 className="text-3xl md:text-5xl md:text-7xl font-bold leading-tight max-w-4xl">
+          {/* MAIN HEADING */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-4xl">
             Fixed-Income Investing
-            <span className="text-blue-500"> Reimagined.</span>
-          </h1>
+            <span className="text-blue-500">
+              {" "}Reimagined.
+            </span>
+          </h2>
 
-          <p className="text-gray-400 text-xl mt-8 max-w-2xl leading-relaxed">
+          {/* DESCRIPTION */}
+          <p className="text-gray-400 text-lg md:text-xl mt-4 max-w-2xl leading-relaxed">
             BondAtlas enables fractional access to global green
             bonds through a modern digital investment platform.
           </p>
 
           {/* BUTTONS */}
-          <div className="flex flex-col w-full sm:w-auto sm:flex-row gap-4 mt-10">
-
-  <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-400 px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition duration-300">
-    Explore Platform
-  </button>
-
-  <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-400 px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition duration-300">
-    Market Opportunity
-  </button>
-
-  <a
-    href="#contact"
-    className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-400 px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition duration-300"
-  >
-    Request Demo
-  </a>
-
-</div>
+          <div className="flex flex-col sm:flex-row gap-3 mt-6">
+            <a href="#platform" className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-400 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300">Explore Platform</a>
+          </div>
 
           {/* STATS */}
-          <div className="flex gap-5 mt-14">
+          <div className="flex flex-col sm:flex-row gap-3 mt-8">
 
-            <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-6 py-5">
-              <p className="text-sm text-gray-300">
+            <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-4 py-3">
+              <p className="text-sm md:text-base text-gray-300">
                 ₹1,000 Minimum Investing
               </p>
             </div>
 
             <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-6 py-5">
-              <p className="text-sm text-gray-300">
+              <p className="text-sm md:text-base text-gray-300">
                 ESG Focused
               </p>
             </div>
 
             <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-6 py-5">
-              <p className="text-sm text-gray-300">
+              <p className="text-sm md:text-base text-gray-300">
                 AI Discovery
               </p>
             </div>
@@ -69,106 +75,172 @@ function Hero() {
         {/* RIGHT SIDE DASHBOARD */}
         <div className="relative">
 
-          <div className="bg-gradient-to-br from-blue-500/20 to-cyan-400/10 rounded-3xl md:rounded-[40px] p-8 border border-white/10 backdrop-blur-xl shadow-2xl">
+          {/* MAIN DASHBOARD */}
+            <div className="bg-white/[0.06] border border-white/10 backdrop-blur-2xl rounded-[40px] p-4 md:p-6 shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
 
-            <div className="bg-[#111827] rounded-3xl p-8">
+            {/* TOP BAR */}
+            <div className="flex items-center justify-between">
 
-              {/* HEADER */}
-              <div className="flex justify-between items-center mb-10">
+              <div>
+
+                <p className="text-gray-400 text-sm">
+                  Portfolio Value
+                </p>
+
+                <h3 className="text-2xl md:text-3xl font-bold mt-1">
+                  ₹12,48,920
+                </h3>
+
+              </div>
+
+              <div className="bg-emerald-400/20 text-emerald-400 px-3 py-1.5 rounded-2xl text-sm font-semibold">
+                +12.8%
+              </div>
+
+            </div>
+
+            {/* PERFORMANCE */}
+            <div className="mt-8 bg-white/[0.04] border border-white/10 rounded-3xl p-4">
+
+              <div className="flex justify-between items-center">
 
                 <div>
+
                   <p className="text-gray-400 text-sm">
-                    Portfolio Overview
+                    Annual Yield
                   </p>
 
-                  <h2 className="text-3xl font-bold mt-2">
-                    ₹12.8L
-                  </h2>
+                  <h4 className="text-2xl font-bold mt-1">
+                    8.4%
+                  </h4>
+
                 </div>
 
-                <div className="text-emerald-400 text-xl font-semibold">
-                  +12.8%
+                <div>
+
+                  <p className="text-gray-400 text-sm">
+                    ESG Score
+                  </p>
+
+                  <h4 className="text-2xl font-bold mt-1 text-cyan-400">
+                    AA+
+                  </h4>
+
                 </div>
 
               </div>
 
-              {/* BONDS */}
-              <div className="space-y-5">
+              {/* MINI CHART */}
+              <div className="flex items-end gap-2 h-16 mt-6">
 
-                {/* CARD */}
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-5 flex justify-between items-center">
+                <div className="w-3 bg-cyan-400/40 rounded-full h-6"></div>
+                <div className="w-3 bg-cyan-400/40 rounded-full h-10"></div>
+                <div className="w-3 bg-cyan-400/40 rounded-full h-8"></div>
+                <div className="w-3 bg-cyan-400 rounded-full h-12"></div>
+                <div className="w-3 bg-cyan-400 rounded-full h-10"></div>
+                <div className="w-3 bg-cyan-400 rounded-full h-14"></div>
+                <div className="w-3 bg-blue-500 rounded-full h-12"></div>
+                <div className="w-3 bg-blue-500 rounded-full h-16"></div>
+
+              </div>
+
+            </div>
+
+            {/* HOLDINGS */}
+            <div className="mt-8 space-y-3">
+
+              {[
+                {
+                  name: "HDFC Green Bonds",
+                  detail: "Coupon Yield • 7.8%",
+                  value: "₹2.4L",
+                  growth: "+8.2%",
+                },
+                {
+                  name: "REC Infrastructure Bonds",
+                  detail: "Maturity • 2029",
+                  value: "₹3.1L",
+                  growth: "+10.4%",
+                },
+                {
+                  name: "SBI ESG Debt Fund",
+                  detail: "ESG Linked • AA+",
+                  value: "₹1.8L",
+                  growth: "+7.1%",
+                },
+              ].map((holding, index) => (
+
+                <div
+                  key={index}
+                  className="bg-white/[0.04] border border-white/10 rounded-2xl p-3 flex items-center justify-between"
+                >
 
                   <div>
-                    <h3 className="font-semibold">
-                      Adani Green Bond
-                    </h3>
+
+                    <h5 className="font-semibold">
+                      {holding.name}
+                    </h5>
 
                     <p className="text-gray-400 text-sm mt-1">
-                      ESG Rated
+                      {holding.detail}
                     </p>
+
                   </div>
 
                   <div className="text-right">
-                    <p className="font-bold">
-                      7.2%
+
+                    <p className="font-semibold">
+                      {holding.value}
                     </p>
 
-                    <p className="text-emerald-400 text-sm">
-                      Active
+                    <p className="text-emerald-400 text-sm mt-1">
+                      {holding.growth}
                     </p>
+
                   </div>
 
                 </div>
 
-                {/* CARD */}
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-5 flex justify-between items-center">
+              ))}
 
-                  <div>
-                    <h3 className="font-semibold">
-                      NTPC Energy Bond
-                    </h3>
+            </div>
 
-                    <p className="text-gray-400 text-sm mt-1">
-                      Green Infrastructure
-                    </p>
-                  </div>
+            {/* BOTTOM METRICS */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10">
 
-                  <div className="text-right">
-                    <p className="font-bold">
-                      6.8%
-                    </p>
+              <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-4">
 
-                    <p className="text-emerald-400 text-sm">
-                      Stable
-                    </p>
-                  </div>
+                <p className="text-gray-400 text-sm">
+                  Diversification
+                </p>
 
-                </div>
+                <h4 className="text-2xl font-bold mt-2">
+                  14 Assets
+                </h4>
 
-                {/* CARD */}
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-5 flex justify-between items-center">
+              </div>
 
-                  <div>
-                    <h3 className="font-semibold">
-                      Reliance Infra Bond
-                    </h3>
+              <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-4">
 
-                    <p className="text-gray-400 text-sm mt-1">
-                      Corporate Debt
-                    </p>
-                  </div>
+                <p className="text-gray-400 text-sm">
+                  Avg Duration
+                </p>
 
-                  <div className="text-right">
-                    <p className="font-bold">
-                      8.1%
-                    </p>
+                <h4 className="text-2xl font-bold mt-2">
+                  4.2Y
+                </h4>
 
-                    <p className="text-emerald-400 text-sm">
-                      Performing
-                    </p>
-                  </div>
+              </div>
 
-                </div>
+              <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-4">
+
+                <p className="text-gray-400 text-sm">
+                  Risk Rating
+                </p>
+
+                <h4 className="text-2xl font-bold mt-2 text-cyan-400">
+                  Low
+                </h4>
 
               </div>
 

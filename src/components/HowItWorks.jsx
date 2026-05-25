@@ -2,47 +2,44 @@ function HowItWorks() {
 
   const steps = [
     {
-      number: "01",
       title: "Digital KYC",
       description:
-        "Complete onboarding securely through paperless digital verification.",
+        "Complete onboarding securely through paperless verification.",
+      icon: "🛡️",
     },
     {
-      number: "02",
       title: "Risk Profiling",
       description:
-        "Set investment goals, risk appetite, and ESG preferences.",
+        "Set investment goals, ESG preferences, and risk appetite.",
+      icon: "📊",
     },
     {
-      number: "03",
       title: "Discover Bonds",
       description:
-        "Explore AI-curated fixed-income opportunities matched to your profile.",
+        "Explore AI-curated fixed-income opportunities instantly.",
+      icon: "🔍",
     },
     {
-      number: "04",
       title: "Invest via UPI",
       description:
         "Start fractional investing seamlessly from ₹1,000.",
+      icon: "💳",
     },
     {
-      number: "05",
       title: "Track Performance",
       description:
         "Monitor yields, maturity dates, and ESG impact live.",
-    },
-    {
-      number: "06",
-      title: "Auto Reinvest",
-      description:
-        "Reinvest returns automatically into new opportunities.",
+      icon: "📈",
     },
   ];
 
   return (
-    <section id="how-it-works" className="px-5 md:px-10 py-32 text-white">
+    <section
+      id="how-it-works"
+      className="px-4 md:px-10 py-10 md:py-14 text-white overflow-hidden min-h-screen flex items-center"
+    >
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
 
         {/* HEADING */}
         <div className="max-w-4xl">
@@ -51,69 +48,57 @@ function HowItWorks() {
             Investment Journey
           </p>
 
-          <h2 className="text-6xl font-bold leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
             Invest in
-            <span className="text-blue-500"> Minutes.</span>
+            <span className="text-blue-500"> {" "}Minutes.</span>
           </h2>
 
-          <p className="text-gray-400 text-xl mt-8 leading-relaxed">
+          <p className="text-gray-400 text-base md:text-lg mt-4 leading-relaxed">
             BondAtlas simplifies fixed-income investing into
-            a seamless digital-first experience built for modern investors.
+            a seamless digital-first experience.
           </p>
 
         </div>
 
         {/* TIMELINE */}
-        <div className="relative mt-24">
+        <div className="relative mt-10">
 
           {/* CENTER LINE */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-blue-500 via-cyan-400 to-emerald-400 transform -translate-x-1/2"></div>
+
+          <div className="absolute left-5 top-0 w-[2px] h-full bg-gradient-to-b from-blue-500 via-cyan-400 to-transparent"></div>
 
           {/* STEPS */}
-          <div className="space-y-16">
+          <div className="space-y-6">
 
             {steps.map((step, index) => (
 
-              <div
-                key={index}
-                className={`flex items-center ${
-                  index % 2 === 0
-                    ? "justify-start"
-                    : "justify-end"
-                }`}
-              >
+              <div key={index} className="relative flex items-start gap-4">
 
-                <div className="w-full lg:w-[48%]">
+                {/* ICON */}
+                <div className="relative z-10 min-w-[44px] h-[44px] rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-400 flex items-center justify-center text-xl shadow-[0_0_16px_rgba(34,211,238,0.28)]">
 
-                  <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-[1.02] transition duration-300">
+                  {step.icon}
 
-                    {/* NUMBER */}
-                    <div className="flex items-center justify-between">
+                </div>
 
-                      <div className="text-4xl md:text-6xl font-bold text-blue-500/30">
-                        {step.number}
-                      </div>
+                {/* CARD */}
+                <div className="w-full bg-white/[0.05] border border-white/10 backdrop-blur-2xl rounded-3xl p-4 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.20)] transition duration-300">
 
-                      <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center text-xl">
-                        ✓
-                      </div>
+                  <div className="flex items-center justify-between">
 
-                    </div>
+                    <h3 className="text-lg md:text-xl font-bold">
+                      {step.title}
+                    </h3>
 
-                    {/* CONTENT */}
-                    <div className="mt-8">
-
-                      <h3 className="text-3xl font-bold">
-                        {step.title}
-                      </h3>
-
-                      <p className="text-gray-400 text-lg leading-relaxed mt-5">
-                        {step.description}
-                      </p>
-
-                    </div>
+                    <span className="text-cyan-400 text-xs">
+                      0{index + 1}
+                    </span>
 
                   </div>
+
+                  <p className="text-gray-400 mt-3 leading-relaxed text-sm md:text-base">
+                    {step.description}
+                  </p>
 
                 </div>
 

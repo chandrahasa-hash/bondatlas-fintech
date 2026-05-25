@@ -1,6 +1,6 @@
 function ProblemSection() {
   return (
-    <section id="problem" className="px-5 md:px-10 py-32 text-white">
+    <section id="problem" className="px-5 md:px-10 py-20 text-white">
 
       <div className="max-w-7xl mx-auto">
 
@@ -25,7 +25,7 @@ function ProblemSection() {
         </div>
 
         {/* CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
 
           {/* CARD 1 */}
           <div className="bg-gradient-to-b from-white/10 to-white/5 border border-white/10 rounded-3xl p-8 hover:scale-105 transition duration-300">

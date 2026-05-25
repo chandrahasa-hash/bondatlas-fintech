@@ -8,7 +8,7 @@ function BackToTop() {
 
     const toggleVisibility = () => {
 
-      if (window.scrollY > 500) {
+      if (window.scrollY > 400) {
         setVisible(true);
       } else {
         setVisible(false);
@@ -39,9 +39,41 @@ function BackToTop() {
 
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-blue-600 to-cyan-400 text-white w-14 h-14 rounded-2xl text-2xl shadow-[0_0_25px_rgba(34,211,238,0.35)] hover:scale-110 transition duration-300"
+          aria-label="Back to top"
+          className="
+            fixed
+            bottom-5
+            right-5
+            md:bottom-7
+            md:right-7
+            z-50
+            group
+            flex
+            items-center
+            justify-center
+            w-11
+            h-11
+            md:w-12
+            md:h-12
+            rounded-xl
+            border
+            border-white/10
+            bg-white/[0.06]
+            backdrop-blur-xl
+            text-white/80
+            shadow-[0_8px_30px_rgba(0,0,0,0.25)]
+            hover:bg-cyan-400
+            hover:text-white
+            hover:scale-105
+            transition-all
+            duration-300
+          "
         >
-          ↑
+
+          <span className="text-lg md:text-xl group-hover:-translate-y-[2px] transition duration-300">
+            ↑
+          </span>
+
         </button>
 
       )}

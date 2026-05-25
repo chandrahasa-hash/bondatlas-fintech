@@ -3,8 +3,17 @@
 html {
   scroll-behavior: smooth;
 }
+/* enable smooth scroll snapping so each major section aligns nicely on scroll */
+html, body {
+  height: 100%;
+}
+body {
+  scroll-snap-type: y proximity;
+}
+
 section {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 56px; /* account for compact navbar */
+  scroll-snap-align: start;
 }
 
 body {

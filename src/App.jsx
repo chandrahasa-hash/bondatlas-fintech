@@ -1,32 +1,33 @@
 import Navbar from "./components/Navbar";
+import ScrollIndicator from "./components/ScrollIndicator";
 import Hero from "./components/Hero";
 import ProblemSection from "./components/ProblemSection";
-import WhyNow from "./components/WhyNow";
-import PlatformExperience from "./components/PlatformExperience";
-import HowItWorks from "./components/HowItWorks";
+import PlatformExperience, { Watchlist } from "./components/PlatformExperience";
 import MarketOpportunity from "./components/MarketOpportunity";
+import HowItWorks from "./components/HowItWorks";
 import BusinessModel from "./components/BusinessModel";
 import CompetitiveAdvantage from "./components/CompetitiveAdvantage";
 import Financials from "./components/Financials";
 import FinalCTA from "./components/FinalCTA";
-import TeamContactUs from "./components/TeamContactUs";
+import ContactUs from "./components/ContactUs";
 import BackToTop from "./components/BackToTop";
 import Footer from "./components/Footer";
 function App() {
   return (
     <div className="bg-[#081225] min-h-screen">
       <Navbar />
+      <ScrollIndicator />
       <Hero />
       <ProblemSection />
-      <WhyNow />
       <PlatformExperience />
-      <HowItWorks />
+      <Watchlist />
       <MarketOpportunity />
+      <HowItWorks />
       <BusinessModel />
       <CompetitiveAdvantage />
       <Financials />
       <FinalCTA />
-      <TeamContactUs />
+      <ContactUs />
       <BackToTop />
       <Footer />
     </div>

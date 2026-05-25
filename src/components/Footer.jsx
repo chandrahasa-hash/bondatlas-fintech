@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="px-5 md:px-10 pt-32 pb-14 text-white border-t border-white/10">
+    <footer className="px-5 md:px-10 pt-20 pb-14 text-white border-t border-white/10">
 
       <div className="max-w-7xl mx-auto">
 
@@ -125,7 +125,7 @@ function Footer() {
         </div>
 
         {/* LOWER BAR */}
-        <div className="border-t border-white/10 mt-20 pt-10 flex flex-col md:flex-row gap-6 md:gap-0 items-start md:items-center justify-between">
+        <div className="border-t border-white/10 mt-14 pt-10 flex flex-col md:flex-row gap-6 md:gap-0 items-start md:items-center justify-between">
 
           <p className="text-gray-500">
             © 2026 BondAtlas. All rights reserved.
