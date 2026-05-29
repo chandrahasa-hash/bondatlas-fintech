@@ -24,7 +24,7 @@ function Navbar() {
 
         {/* LOGO */}
     <a href="#home" className="flex items-center justify-center hover:scale-105 transition duration-300 -my-2">
-      <img src="/logo.png" alt="BondAtlas" className="w-30 h-30 object-contain" />
+      <img src="/logo.png" alt="BondAtlas" className="w-20 h-25 object-contain" />
     </a>
 
         {/* DESKTOP NAV */}

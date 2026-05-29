@@ -39,7 +39,7 @@ function PlatformExperience() {
             Platform Experience
           </p>
 
-          <h2 className="text-2xl md:text-4xl font-bold leading-tight">
+          <h2 className="text-2xl md:text-3xl font-bold leading-tight">
             Designed for the Next Generation of
             <span className="text-blue-500"> {" "}Fixed-Income Investing.</span>
           </h2>
