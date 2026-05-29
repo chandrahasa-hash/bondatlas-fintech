@@ -2,75 +2,130 @@ function Hero() {
   return (
     <section
       id="home"
-      className="text-white px-4 md:px-10 py-10 md:py-14 min-h-screen flex items-center overflow-hidden"
+      className="text-white px-4 md:px-10 pt-24 md:pt-28 pb-10 md:pb-14 min-h-[calc(100vh-96px)] flex items-center overflow-x-hidden"
     >
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-        {/* LEFT SIDE */}
+  {/* LEFT SIDE */}
+<div>
+
+  {/* BRAND */}
+  <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-none tracking-tight">
+
+    <span className="text-white">
+      Bond
+    </span>
+
+    <span className="text-blue-500">
+      Atlas
+    </span>
+
+  </h1>
+
+  {/* TAGLINE */}
+  <p className="uppercase tracking-[4px] text-cyan-400 mt-4 mb-4 text-sm">
+    Global Bonds. Local Access.
+  </p>
+
+  {/* MAIN HEADING */}
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-4xl">
+    Fixed-Income Investing
+    <span className="text-blue-500">
+      {" "}Reimagined.
+    </span>
+  </h2>
+
+  {/* DESCRIPTION */}
+  <p className="text-gray-400 text-lg md:text-xl mt-4 max-w-2xl leading-relaxed">
+    BondAtlas enables fractional access to global green
+    bonds through a modern digital investment platform.
+  </p>
+
+  {/* BUTTONS */}
+  <div className="flex flex-col sm:flex-row gap-3 mt-6">
+
+    <a
+      href="#platform"
+      className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-400 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300"
+    >
+      Explore Platform
+    </a>
+
+  </div>
+
+  {/* PITCH DECK VIDEO */}
+  <div className="mt-6">
+
+    <div className="bg-white/[0.06] border border-white/10 rounded-3xl overflow-hidden backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
+
+      {/* HEADER */}
+      <div className="flex items-center justify-between px-5 py-3 border-b border-white/10">
+
         <div>
 
-          {/* BRAND */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-none tracking-tight">
-
-            <span className="text-white">
-              Bond
-            </span>
-
-            <span className="text-blue-500">
-              Atlas
-            </span>
-
-          </h1>
-
-          {/* TAGLINE */}
-          <p className="uppercase tracking-[4px] text-cyan-400 mt-4 mb-4 text-sm">
-            Global Bonds. Local Access.
+          <p className="font-semibold text-white">
+            BondAtlas Pitch Deck
           </p>
 
-          {/* MAIN HEADING */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight max-w-4xl">
-            Fixed-Income Investing
-            <span className="text-blue-500">
-              {" "}Reimagined.
-            </span>
-          </h2>
-
-          {/* DESCRIPTION */}
-          <p className="text-gray-400 text-lg md:text-xl mt-4 max-w-2xl leading-relaxed">
-            BondAtlas enables fractional access to global green
-            bonds through a modern digital investment platform.
+          <p className="text-gray-400 text-sm">
+            Startup Overview Video
           </p>
-
-          {/* BUTTONS */}
-          <div className="flex flex-col sm:flex-row gap-3 mt-6">
-            <a href="#platform" className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-cyan-400 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300">Explore Platform</a>
-          </div>
-
-          {/* STATS */}
-          <div className="flex flex-col sm:flex-row gap-3 mt-8">
-
-            <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-4 py-3">
-              <p className="text-sm md:text-base text-gray-300">
-                ₹1,000 Minimum Investing
-              </p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-6 py-5">
-              <p className="text-sm md:text-base text-gray-300">
-                ESG Focused
-              </p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-6 py-5">
-              <p className="text-sm md:text-base text-gray-300">
-                AI Discovery
-              </p>
-            </div>
-
-          </div>
 
         </div>
+
+        <div className="flex items-center gap-2">
+
+          <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
+
+          <span className="text-xs text-emerald-400">
+            Video
+          </span>
+
+        </div>
+
+      </div>
+
+      {/* VIDEO */}
+      <video
+        controls
+        preload="metadata"
+        className="w-full aspect-video bg-black"
+      >
+        <source
+          src="/videos/bondatlas-pitch.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+    </div>
+
+  </div>
+
+  {/* STATS */}
+  <div className="flex flex-col sm:flex-row gap-3 mt-6">
+
+    <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-4 py-3">
+      <p className="text-sm md:text-base text-gray-300">
+        ₹1,000 Minimum Investing
+      </p>
+    </div>
+
+    <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-6 py-5">
+      <p className="text-sm md:text-base text-gray-300">
+        ESG Focused
+      </p>
+    </div>
+
+    <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl px-6 py-5">
+      <p className="text-sm md:text-base text-gray-300">
+        AI Discovery
+      </p>
+    </div>
+
+  </div>
+
+</div>
 
         {/* RIGHT SIDE DASHBOARD */}
         <div className="relative">

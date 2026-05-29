@@ -28,30 +28,30 @@ const COLORS = ["#22d3ee", "#3b82f6", "#10b981"];
 function PlatformExperience() {
 
   return (
-    <section id="platform" className="px-5 md:px-10 py-6 md:py-8 text-white overflow-hidden">
+    <section id="platform" className="px-5 md:px-10 py-4 md:py-6 text-white overflow-hidden min-h-screen flex items-center">
 
       <div className="max-w-7xl mx-auto">
 
         {/* HEADING */}
-        <div className="max-w-4xl">
+        <div className="max-w-5xl mb-4">
 
-          <p className="text-cyan-400 uppercase tracking-[4px] mb-5">
+          <p className="text-cyan-400 uppercase tracking-[4px] mb-2 text-sm">
             Platform Experience
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="text-2xl md:text-4xl font-bold leading-tight">
             Designed for the Next Generation of
             <span className="text-blue-500"> {" "}Fixed-Income Investing.</span>
           </h2>
 
-          <p className="text-gray-400 text-sm md:text-base mt-2 leading-relaxed">
+          <p className="text-gray-400 text-sm md:text-base mt-1 leading-relaxed">
             Unified platform for discovery, portfolio tracking, and ESG.
           </p>
 
         </div>
 
         {/* MAIN DASHBOARD */}
-        <div className="mt-6 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-[28px] p-2 md:p-3 backdrop-blur-2xl shadow-[0_6px_24px_rgba(0,0,0,0.28)]">
+        <div className="mt-4 bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-[28px] p-2 backdrop-blur-2xl shadow-[0_6px_24px_rgba(0,0,0,0.28)]">
 
           {/* MARKET PULSE */}
           <div className="flex flex-wrap gap-2 mb-4">
@@ -65,8 +65,7 @@ function PlatformExperience() {
           </div>
 
           {/* MAIN GRID */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-4 items-start">
-
+<div className="grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-3 items-start">
             {/* LEFT SIDE */}
             <div className="space-y-2">
 
@@ -144,8 +143,7 @@ function PlatformExperience() {
 
                 <p className="text-gray-400 text-xs">Fractional Investing</p>
 
-                <h3 className="text-xl md:text-2xl font-bold mt-1 leading-tight">Start from ₹1,000</h3>
-
+<h3 className="text-lg md:text-xl font-bold mt-1 leading-tight"></h3>
                 <p className="text-gray-400 mt-2 leading-relaxed text-sm">Paperless onboarding and instant allocation.</p>
 
                 <div className="flex gap-2 mt-3">
@@ -213,7 +211,7 @@ function PlatformExperience() {
 
                   </div>
 
-                    <div className="h-24">
+                    <div className="h-20">
 
                     <ResponsiveContainer width="100%" height="100%">
 
@@ -369,11 +367,10 @@ export default PlatformExperience;
 
 export function Watchlist() {
   return (
-    <section id="watchlist" className="px-5 md:px-10 py-10 text-white">
-
+<section id="watchlist" className="px-5 md:px-10 py-0 text-white">
       <div className="max-w-7xl mx-auto">
 
-        <div className="mt-6 bg-[#111827]/90 border border-white/10 rounded-3xl p-6 md:p-7 backdrop-blur-2xl transition duration-300 hover:border-cyan-400/30 hover:shadow-[0_10px_40px_rgba(34,211,238,0.12)]">
+        <div className="mt-0 bg-[#111827]/90 border border-white/10 rounded-3xl p-6 md:p-7 backdrop-blur-2xl transition duration-300 hover:border-cyan-400/30 hover:shadow-[0_10px_40px_rgba(34,211,238,0.12)]">
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
