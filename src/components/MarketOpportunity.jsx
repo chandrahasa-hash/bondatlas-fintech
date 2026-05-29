@@ -212,14 +212,14 @@ function MarketOpportunity() {
 
               </div>
 
-              <div className="text-emerald-400 text-2xl font-semibold">
+              <div className="text-emerald-400 text-1xl font-semibold">
                 +307%
               </div>
 
             </div>
 
             {/* VISUAL CHART */}
-            <div className="mt-8 flex items-end justify-between h-44">
+            <div className="mt-20 flex items-end justify-between h-44">
 
               {[
                 "h-20",
@@ -265,7 +265,7 @@ function MarketOpportunity() {
             </p>
 
             <h3 className="text-3xl font-bold mt-2">
-              32M+ Global Diaspora
+              32M+ Global Indian Diaspora
             </h3>
 
             {/* SEGMENTS */}
@@ -322,11 +322,11 @@ function MarketOpportunity() {
               <div className="bg-white/5 rounded-2xl p-5">
 
                 <p className="text-gray-400 text-sm">
-                  Demat Accounts
+                  Investable Wealth
                 </p>
 
                 <h4 className="text-3xl font-bold mt-3">
-                  185M+
+                  $1T+
                 </h4>
 
               </div>
@@ -334,11 +334,11 @@ function MarketOpportunity() {
               <div className="bg-white/5 rounded-2xl p-5">
 
                 <p className="text-gray-400 text-sm">
-                  CAGR Growth
+                  Annual Remittances
                 </p>
 
                 <h4 className="text-3xl font-bold mt-3">
-                  32%
+                  $125B+
                 </h4>
 
               </div>
